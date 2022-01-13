@@ -4356,7 +4356,7 @@ fclose($dextraFile);
 
     <tr>
     <td align="left"><a style="color:red;" class="tooltip2" href="#"><?php echo "Statical DGID's for YCS-Network";?>:<span><b style="background-color:#6bff33;">YCS Network</b>Example: 14;24;96</span></a></td>
-    <td align="left" colspan="2"> Options=<input type="text" name="ysfgatewayYSFNetworkOptions" size="67" maxlength="67" value="<?php if (isset($configysfgateway['YSF Network']['Options'])) { echo $configysfgateway['YSF Network']['Options']; } ?>" /></td>
+    <td align="left" colspan="2"> Options=<input type="text" name="ysfgatewayYSFNetworkOptions" size="70" maxlength="67" value="<?php if (isset($configysfgateway['YSF Network']['Options'])) { echo $configysfgateway['YSF Network']['Options']; } ?>" /></td>
     </tr>
 
     <td align="left"><a class="tooltip2" href="#">APRS Enable:<span><b>APRS Enable</b>Enable APRS output only for EA7EE ysfgateway.</span></a></td>
