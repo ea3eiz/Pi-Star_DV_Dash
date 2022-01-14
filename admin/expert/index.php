@@ -23,7 +23,7 @@ require_once('../config/version.php');
     <meta http-equiv="pragma" content="no-cache" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta http-equiv="Expires" content="0" />
-    <title>Pi-Star - Digital Voice Dashboard - Expert Editor</title>
+    <title>Editor Experto</title>
     <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/pistar-css.php" />
   </head>
@@ -32,32 +32,33 @@ require_once('../config/version.php');
   <?php include './header-menu.inc'; ?>
   <div class="contentwide">
 
-  <table width="100%">
-    <tr><th>Expert Editors</th></tr>
+  <table width="120%">
+    <tr><th>EDITOR EXPERTOS</th></tr>
     <tr><td align="center">
-      <h2>**WARNING**</h2>
-      Pi-Star Expert editors have been created to make editing some of the extra settings in the<br />
-      config files more simple, allowing you to update some areas of the config files without the<br />
-      need to login to your Pi over SSH.<br />
+      <h2 style="color: #f00;">**PELIGRO**</h2>
+      Los editores Pi-Star Expert se han creado para editar algunas de las configuraciones adicionales en el<br />
+      archivos de configuración más simple, lo que le permite actualizar algunas áreas de los archivos de <br />
+      configuración sin el necesita iniciar sesión en su Pi a través de SSH.<br />
       <br />
-      Please keep in mind when making your edits here, that these config files can be updated by<br />
-      the dashboard, and that your edits can be over-written. It is assumed that you already know<br />
-      what you are doing editing the files by hand, and that you understand what parts of the files<br />
-      are maintained by the dashboard.<br />
+      Tenga en cuenta que cuando haga sus ediciones aquí, estos archivos de configuración pueden ser actualizados por<br />
+      el panel de control y que sus ediciones se pueden sobrescribir. Se asume que ya sabes<br />
+      lo que está haciendo editando los archivos a mano y que comprende qué partes de los archivos<br />
+      son mantenidos por el Dashboard.<br />
       <br />
-      With that warning in mind, you are free to make any changes you like, for help come to the Facebook<br />
-      group (link at the bottom of the page) and ask for help if / when you need it.<br />
-      73 and enjoy your Pi-Star experiance.<br />
-      Pi-Star UK Team.<br />
+      Con esa advertencia en mente, puede realizar los cambios que desee para recibir ayuda en Facebook.<br />
+      grupo (enlace en la parte inferior de la página) y pida ayuda cuando la necesite.<br />
+      73 y disfruta de tu experiencia Pi-Star.<br />
+      Equipo de Pi-Star UK.<br />
       <br />
     </td></tr>
   </table>
   </div>
 
-<div class="footer">
+  <div class="footer">
 Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
 Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
 or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
+<a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>
 </div>
 
 </div>
