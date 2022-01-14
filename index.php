@@ -81,7 +81,7 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
     else {
 	?>
 	
-	    <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+	    <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"><?php echo $rev; ?></div>
 	    <h1 style="color: #ff0;">PANEL DE CONTROL - <?php echo $MYCALL; ?></h1>
 
     <?php
