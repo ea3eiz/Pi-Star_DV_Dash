@@ -1,26 +1,4 @@
-<?php
-require_once('config/version.php');
-require_once('config/ircddblocal.php');
-require_once('config/language.php');
-$configs = array();
-if ($configfile = fopen($gatewayConfigPath,'r')) {
-        while ($line = fgets($configfile)) {
-                list($key,$value) = preg_split('/=/',$line);
-                $value = trim(str_replace('"','',$value));
-                if ($key != 'ircddbPassword' && strlen($value) > 0)
-                $configs[$key] = $value;
-        }
 
-}
-$progname = basename($_SERVER['SCRIPT_FILENAME'],".php");
-$rev=$version;
-$MYCALL=($callsign);
-
-//Load the Pi-Star Release file
-$pistarReleaseConfig = '/etc/pistar-release';
-$configPistarRelease = array();
-$configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
-?>
 <style type="text/css">
 .logo{
     text-align: center;
@@ -32,7 +10,7 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
 <a href="http://associacioader.com" target="_blank"><img src="../images/Logo_Ader.png" width="130" alt=""/></a>
 
 </div>
-	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"<?php echo ['rev'];?></div>
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"<?php echo ['version'];?></div>
 	    <h1 style="color: #ff0;">EDITOR EXPERTOS</h1
     <p>
 	<div class="navbar">
