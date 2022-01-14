@@ -50,13 +50,44 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
     </script>
     <link href="/featherlight.css" type="text/css" rel="stylesheet" />
     <script src="/featherlight.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+  .logo{
+    text-align: center;
+	font-size: 12px;
+  }
+  </style>	
 </head>
 <body>
+	<br>
     <div class="container">
+  	<br>
+	  <div class="logo">
+<a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
+
+</div>
+<br>
 	<div class="header">
-	    <div style="font-size: 8px; text-align: left; padding-left: 8px; float: left;">Hostname: <?php echo exec('cat /etc/hostname'); ?></div><div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
-	    <h1>Pi-Star <?php echo $lang['digital_voice']." ".$lang['dashboard_for']." ".$MYCALL; ?></h1>
-	    
+
+
+
+	<?php if ($_SERVER["PHP_SELF"] == "/admin/index.php") {
+	?>
+
+		<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+		<h1 style="color: #ff0;">ADMINISTRAR - <?php echo $MYCALL; ?></h1>
+
+	<?php
+    }
+    else {
+	?>
+	
+	    <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+	    <h1 style="color: #ff0;">PANEL DE CONTROL - <?php echo $MYCALL; ?></h1>
+
+    <?php
+	} 
+	?>	
+
 	    <p>
  		<div class="navbar">
 		    <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
@@ -65,11 +96,12 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
 			echo ' <a class="menupower" href="/admin/power.php">'.$lang['power'].'</a>'."\n";
 			echo ' <a class="menusysinfo" href="/admin/sysinfo.php">Sysinfo</a>'."\n";
 			echo ' <a class="menulogs" href="/admin/live_modem_log.php">Modem Log</a>'."\n";
-			echo ' <a class="menulogs" href="/admin/live_ysf_log.php">YSF Log</a>'."\n";			
-		    } ?>
+			echo ' <a class="menulogs" href="/admin/live_ysf_log.php">YSF Log</a>'."\n";	
+			} ?>
 		    <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
 			<a class="menulogs" href="/news/index.php">WiresX News</a>			
 			<a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
+
 
 		</div> 
 	    </p>
@@ -349,11 +381,13 @@ if (file_exists('/etc/dstar-radio.mmdvmhost')) {
 </div>
 
 <div class="footer">
+	<div class="logo">
     <?php if ($_SERVER["PHP_SELF"] == "/admin/index.php") {
 	echo 'PI-STAR V.MOD DG-ID YSFGateway BY EA7EE,<br />'."\n";
 	echo 'Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-'.date("Y").'<br />'."\n";
 	echo 'Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />'."\n";
 	echo 'or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />'."\n";
+	echo '<a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>';
     }
     else {
 	echo 'PI-STAR V.MOD DG-ID YSFGateway BY EA7EE,<br />'."\n";
@@ -363,9 +397,10 @@ if (file_exists('/etc/dstar-radio.mmdvmhost')) {
 	echo 'Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Facebook Group</a><br />'."\n";
 	echo 'or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />'."\n";
 	echo 'Get your copy of Pi-Star from <a style="color: #ffffff;" href="http://www.pistar.uk/downloads/" target="_new">here</a>.<br />'."\n";
+	echo '<a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>';
     } ?>
 </div>
-
+</div>
 </div>
 </body>
 </html>
