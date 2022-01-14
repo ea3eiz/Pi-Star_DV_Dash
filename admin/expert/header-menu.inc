@@ -1,6 +1,16 @@
+<style type="text/css">
+.logo{
+    text-align: center;
+	font-size: 12px;
+  }
+  </style>
 <div class="header">
-    <div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
-    <h1>Pi-Star Digital Voice - Expert Editors</h1>
+<div class="logo">
+<a href="http://associacioader.com" target="_blank"><img src="../images/Logo_Ader.png" width="130" alt=""/></a>
+
+</div>
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+	    <h1 style="color: #ff0;">EDITOR EXPERTOS</h1
     <p>
 	<div class="navbar">
 	    <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
