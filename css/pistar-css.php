@@ -315,10 +315,10 @@ h1 {
 input.toggle-round-flat + label {
     padding: 1px;
     border: 1px solid transparent;
-    width: 33px;
-    height: 18px;
-    background-color: #dddddd;
-    border-radius: 10px;
+    width: 36px;                /* Anchura del check */
+    height: 18px;               /* Altura del check */
+    background-color: #FFF;     /* color border check Apagado*/
+    border-radius: 1px;
     transition: background 0.4s;
 }
 
@@ -334,9 +334,9 @@ input.toggle-round-flat + label:before {
     left: 1px;
     bottom: 1px;
     right: 1px;
-    background-color: #fff;
-    background: <?php echo $backgroundContent; ?>;
-    border-radius: 10px;
+    background-color: #000;             /* Fondo check apagado o encendido */
+    
+    
     transition: background 0.4s;
 }
 
@@ -345,18 +345,18 @@ input.toggle-round-flat + label:after {
     left: 2px;
     bottom: 2px;
     width: 16px;
-    background-color: #dddddd;
-    border-radius: 12px;
+    background-color: #f00;          /* color bolita check  apagado */
+    border-radius: 2px;              /* border radio */
     transition: margin 0.4s, background 0.4s;
 }
 
 input.toggle-round-flat:checked + label {
-    background-color: <?php echo $backgroundBanners; ?>;
+    background: #339933; /* Color del border del check encendido en verde */
 }
 
 input.toggle-round-flat:checked + label:after {
-    margin-left: 14px;
-    background-color: <?php echo $backgroundBanners; ?>;
+    margin-left: 18px;           /* Desplazamiento de la bolita a la derecha */
+    background: #339933;      /* color de la bolita check encendido */
 }
 
 input.toggle-round-flat:focus + label {
