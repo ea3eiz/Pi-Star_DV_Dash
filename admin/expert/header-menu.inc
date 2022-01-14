@@ -9,7 +9,7 @@
 <a href="http://associacioader.com" target="_blank"><img src="../images/Logo_Ader.png" width="130" alt=""/></a>
 
 </div>
-	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"<?php echo ['version'];?></div>
 	    <h1 style="color: #ff0;">EDITOR EXPERTOS</h1
     <p>
 	<div class="navbar">
