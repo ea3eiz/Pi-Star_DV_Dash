@@ -566,6 +566,7 @@ input.toggle-round-flat:focus + label {
 
 .menuadmin:before {
     content: "\f2bd";
+    color: #339933;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -575,6 +576,7 @@ input.toggle-round-flat:focus + label {
 
 .menuupdate:before {
     content: "\f021";
+    color: #339933;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -593,6 +595,7 @@ input.toggle-round-flat:focus + label {
 
 .menupower:before {
     content: "\f011";
+    color: #f00;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -620,6 +623,7 @@ input.toggle-round-flat:focus + label {
 
 .menubackup:before {
     content: "\f187";
+    color: #ff0;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -629,6 +633,7 @@ input.toggle-round-flat:focus + label {
 
 .menuexpert:before {
     content: "\f0a3";
+    color: #ff0;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -638,6 +643,7 @@ input.toggle-round-flat:focus + label {
 
 .menureset:before {
     content: "\f1cd";
+    color: #f00;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
