@@ -14,7 +14,7 @@ if ($configfile = fopen($gatewayConfigPath,'r')) {
 }
 $progname = basename($_SERVER['SCRIPT_FILENAME'],".php");
 $rev=$version;
-$MYCALL=strtoupper($callsign);
+$MYCALL=($callsign);
 
 //Load the Pi-Star Release file
 $pistarReleaseConfig = '/etc/pistar-release';
