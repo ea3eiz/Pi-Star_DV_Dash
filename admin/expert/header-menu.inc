@@ -1,4 +1,3 @@
-
 <style type="text/css">
 .logo{
     text-align: center;
@@ -10,16 +9,16 @@
 <a href="http://associacioader.com" target="_blank"><img src="../images/Logo_Ader.png" width="130" alt=""/></a>
 
 </div>
-	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"<?php echo ['version'];?></div>
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
 	    <h1 style="color: #ff0;">EDITOR EXPERTOS</h1
     <p>
 	<div class="navbar">
-	    <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
-	    <a class="menubackup" href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
-	    <a class="menuupgrade" href="/admin/expert/upgrade.php"><?php echo $lang['upgrade'];?></a>
-	    <a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
-	    <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
-	    <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
+	    <a href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+	    <a href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
+	    <a href="../no_reset.php"><?php echo $lang['upgrade'];?></a>
+	    <a href="../no_reset.php"><?php echo $lang['update'];?></a>
+	    <a href="/admin/"><?php echo $lang['admin'];?></a>
+	    <a href="/"><?php echo $lang['dashboard'];?></a>
 	</div>
 
 	<div class="lnavbar">
