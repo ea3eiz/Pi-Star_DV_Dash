@@ -135,7 +135,7 @@ table td {
 }
 
 body {
-    background: <?php echo $backgroundPage; ?>;
+    background-image: url("fondo_02.png");
     color: #000000;
 }
 
