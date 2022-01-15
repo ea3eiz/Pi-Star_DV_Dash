@@ -48,15 +48,15 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
 <a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
 
 	  <div class="header">
-	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?>∫ / by EA7EE</div>
+	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
 	    <h1 style="color: #ff0;">COPIAR / RESTAURAR</h1>
 	      <p>
 		  <div class="navbar">
-		      <a href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
-		      <a href="no_reset.php"><?php echo $lang['update'];?></a>
-		      <a href="/admin/power.php"><?php echo $lang['power'];?></a>
-		      <a href="/admin/"><?php echo $lang['admin'];?></a>
-		      <a href="/"><?php echo $lang['dashboard'];?></a>
+		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+		      <a class="menuupdate" href="no_reset.php"><?php echo $lang['update'];?></a>
+		      <a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
+		      <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
+		      <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
 		  </div>
 	      </p>
 	  </div>
