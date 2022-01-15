@@ -48,7 +48,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
 <a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
 
 	  <div class="header">
-	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"><?php echo $rev;?>Version 4.1.5 / by EA7EE</div>
+	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;"><?php echo $configPistarRelease['Pi-Star']['Version']?>Version 4.1.5 / by EA7EE</div>
 	    <h1 style="color: #ff0;">COPIAR / RESTAURAR</h1>
 	      <p>
 		  <div class="navbar">
