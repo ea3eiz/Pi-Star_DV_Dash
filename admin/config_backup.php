@@ -31,19 +31,32 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
     <title>Pi-Star - <?php echo $lang['digital_voice']." ".$lang['dashboard']." - ".$lang['backup_restore'];?></title>
     <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/pistar-css.php" />
+
+
+<style type="text/css">
+  .logo{
+    text-align: center;
+	font-size: 12px;
+}
+</style>
+
   </head>
   <body>
       <div class="container">
+
+	  <div class="logo">
+<a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
+
 	  <div class="header">
-	      <div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
-	      <h1>Pi-Star <?php echo $lang['digital_voice']." - ".$lang['backup_restore'];?></h1>
+	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Version 4.1.3 / by EA7EE</div>
+	    <h1 style="color: #ff0;">COPIAR / RESTAURAR</h1>
 	      <p>
 		  <div class="navbar">
-		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
-		      <a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
-		      <a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
-		      <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
-		      <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
+		      <a href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+		      <a href="no_reset.php"><?php echo $lang['update'];?></a>
+		      <a href="/admin/power.php"><?php echo $lang['power'];?></a>
+		      <a href="/admin/"><?php echo $lang['admin'];?></a>
+		      <a href="/"><?php echo $lang['dashboard'];?></a>
 		  </div>
 	      </p>
 	  </div>
@@ -250,29 +263,30 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
   <table width="100%">
   <tr>
-    <th colspan="2"><?php echo $lang['backup_restore'];?></th>
+    <!-- <th colspan="2"><?php echo $lang['backup_restore'];?></th> -->
   </tr>
   <tr>
-    <td align="center" valign="top" width="50%">Download Configuration<br />
+    <td align="center" valign="top" width="50%">Hacer Copia de Seguridad<br />
 	<button style="border: none; background: none;" name="action" value="download"><img src="/images/download.png" border="0" alt="Download Config" /></button>
     </td>
-    <td align="center" valign="top">Restore Configuration<br />
+    <td align="center" valign="top">Restaurar Copia de Seguridad<br />
 	<button style="border: none; background: none;" name="action" value="restore"><img src="/images/restore.png" border="0" alt="Restore Config" /></button><br />
     	<input type="file" name="fileToUpload" id="fileToUpload" />
     </td>
   </tr>
   <tr>
-  <td colspan="2" align="justify">
-	  <br />
-	  <b>WARNING:</b><br />
-	  Editing the files outside of Pi-Star *could* have un-desireable side effects.<br />
-	  <br />
-	  This backup and restore tool, will backup your config files to a Zip file, and allow you to restore them later<br />
-	  either to this Pi-Star or another one.<br />
-	  <ul>
-		  <li>System Passwords / Dashboard passwords are NOT backed up / restored.</li>
-		  <li>Wireless Configuration IS backed up and restored</li>
-	  </ul>
+  <td colspan="2" align="center">
+	<br />
+	<b style="color: #f00;">ADVERTENCIA:</b><br><br>
+	La edición de archivos fuera de Pi-Star * podría * tener efectos secundarios indeseables.<br />
+	<br />
+	Esta herramienta de copia de seguridad y restauración hará una copia de seguridad de sus<br /> 
+	archivos de configuración en un archivo Zip y le permitirá restaurarlos más tarde.<br />
+	<br>
+	  
+	Las contraseñas del sistema / contraseñas del dashboard NO se Copian ni se Restauran</br>
+	La configuración Wifi, se copia y se restaura</li>
+  </br></br>
   </td>
   </tr>
   </table>
@@ -283,6 +297,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
   Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
   Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
   or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
+  <a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>
   </div>
   </div>
   </body>
