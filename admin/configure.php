@@ -356,6 +356,8 @@ $MYCALL=strtoupper($callsign);
 <body onload="checkFrequency(); return false;">
     <div class="container">
 
+	<div class="logo">
+	<a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
 
 	<div class="header">
 	  <div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
@@ -376,6 +378,7 @@ $MYCALL=strtoupper($callsign);
 	    </p>
 	</div>
 	<div class="contentwide">
+
 <?php
 // Hardware Detail
 if ($_SERVER["PHP_SELF"] == "/admin/configure.php") {
