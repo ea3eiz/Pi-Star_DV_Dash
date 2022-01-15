@@ -364,14 +364,11 @@ $MYCALL=strtoupper($callsign);
 	    <h1 style="color: #ff0;">PANEL DE CONFIGURACIÓN - <?php echo $MYCALL; ?></h1>
 	    <p>
 		<div class="navbar">
-		    <!-- <a href="javascript:factoryReset();"><?php echo $lang['factory_reset'];?></a> -->
-			<a class="menureset" href="no_reset.php"><?php echo $lang['factory_reset'];?></a>
+		    <a class="menureset" href="javascript:factoryReset();"><?php echo $lang['factory_reset'];?></a>
 		    <a class="menubackup" href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
-		    <!-- <a  href="/admin/update.php"><?php echo $lang['update'];?></a> -->
-			<a class="menuupdate" href="no_reset.php"><?php echo $lang['update'];?></a>
+		    <a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
 		    <a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
 		    <a class="menuexpert" href="/admin/expert/">Expert</a>
-		  <!--   <a href="/admin/"><?php echo $lang['admin'];?></a> -->
 			<a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
 		    <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
 		</div>
