@@ -90,12 +90,28 @@ if ($_SERVER["PHP_SELF"] == "/admin/update.php") {
       });
     });
     </script>
+
+<style type="text/css">
+    .logo{
+    text-align: center;
+	  font-size: 12px;
+    }
+    </style>	
+
   </head>
   <body>
-      <div class="container">
-	  <div class="header">
-	      <div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
-	      <h1>Pi-Star - <?php echo $lang['digital_voice']." ".$lang['dashboard']." - ".$lang['update'];?></h1>
+  <div class="container">
+      <br>
+
+	 	  <div class="logo">
+<a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
+
+</div>
+<br>
+	<div class="header">
+
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
+	      <h1 style="color: #ff0;">ACTUALIZANDO</h1>
 	      <p>
 		  <div class="navbar">
 		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
@@ -113,9 +129,10 @@ if ($_SERVER["PHP_SELF"] == "/admin/update.php") {
   </table>
   </div>
   <div class="footer">
-  Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
-  Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
-  or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
+Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
+Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
+or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
+<a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>
   </div>
   </div>
   </body>
