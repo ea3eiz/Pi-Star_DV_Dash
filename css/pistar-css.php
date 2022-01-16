@@ -557,6 +557,7 @@ input.toggle-round-flat:focus + label {
 
 .menuconfig:before {
     content: "\f1de";
+    color: #11dd11;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -586,6 +587,7 @@ input.toggle-round-flat:focus + label {
 
 .menuupgrade:before {
     content: "\f1b8";
+    color: #f00;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
