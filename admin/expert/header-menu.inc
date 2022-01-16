@@ -14,7 +14,7 @@
     <p>
 	<div class="navbar">
 	    <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
-	    <a href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
+	    <a class="menubackup" href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
 	    <a class="menuupgrade" href="../upgrade.php"><?php echo $lang['upgrade'];?></a>
 	    <a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
 	    <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
