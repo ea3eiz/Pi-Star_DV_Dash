@@ -84,12 +84,6 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
                 system('sudo mount -o remount,ro / > /dev/null &');
                 exec('sleep 5 && sudo shutdown -h now > /dev/null &');
                 };
-
-                
-                Será redirigido de nuevo a la
-                Tablero automáticamente en 50 segundos.
-
-
   ?>
   </table>
 <?php } else { ?>
