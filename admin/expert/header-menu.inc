@@ -13,12 +13,12 @@
 	    <h1 style="color: #ff0;">EDITOR EXPERTOS</h1
     <p>
 	<div class="navbar">
-	    <a href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+	    <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
 	    <a href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
 	    <a href="../no_reset.php"><?php echo $lang['upgrade'];?></a>
-	    <a href="../no_reset.php"><?php echo $lang['update'];?></a>
-	    <a href="/admin/"><?php echo $lang['admin'];?></a>
-	    <a href="/"><?php echo $lang['dashboard'];?></a>
+	    <a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
+	    <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
+	    <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
 	</div>
 
 	<div class="lnavbar">
