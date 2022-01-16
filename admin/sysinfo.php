@@ -122,6 +122,10 @@ function formatSize( $bytes ) {
 	     background-repeat: repeat-x;
 	     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
 	 }
+	 .logo{
+      text-align: center;
+	  font-size: 12px;
+    }
 	</style>
 	<script type="text/javascript">
 	 function refreshTable () {
@@ -133,20 +137,27 @@ function formatSize( $bytes ) {
     </head>
     <body>
 	<div class="container">
-	    <div class="header">
-		<div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / Dashboard:<?php echo $version; ?></div>
-		<h1>Pi-Star <?php echo $lang['digital_voice']." ".$lang['dashboard']." - SysInfo";?></h1>
-		<p>
-		    <div class="navbar">
-			<a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
-			<a class="menuupdate" href="/admin/update.php"><?php echo $lang['update'];?></a>
-			<a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
-			<a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
-			<a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
-		    </div> 
-		</p>
-	    </div>
-	    <div class="contentwide">
+      <br>
+
+	 	  <div class="logo">
+<a href="http://associacioader.com" target="_blank"><img src="images/Logo_Ader.png" width="130" alt=""/></a>
+
+</div>
+<br>
+	<div class="header">
+
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
+	      <h1 style="color: #ff0;">LOG - YSFGateway</h1>
+	      <p>
+		  <div class="navbar">
+		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+		      <a class="menubackup" href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
+		      <a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
+		      <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
+		      <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
+		  </div>
+	      </p>
+	  </div>
 		<table id="infotable" width="100%" border="0">
 		    <tr><th colspan="2">Pi-Star System Information</th></tr>
 		    <?php
@@ -229,11 +240,12 @@ function formatSize( $bytes ) {
 		    ?>
 		</table>
 	    </div>
-	    <div class="footer">
-		Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
-		Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
-		or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
-	    </div>
+		<div class="footer">
+Pi-Star web config, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
+Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Support Group</a><br />
+or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />
+<a style="color: #ff0;" href="http://www.associacioader.com" target="_new">Dashboard editado por EA3EIZ</a>
+	</div>
 	</div>
     </body>
 </html>
