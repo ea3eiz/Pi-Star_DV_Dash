@@ -67,10 +67,10 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
   <tr><th colspan="2"><?php echo $lang['power'];?></th></tr>
   <?php
         if ( escapeshellcmd($_POST["action"]) == "reboot" ) {
-                echo '<tr><td colspan="2" style="background: #000000; color: #00ff00;"><br /><br />Reboot command has been sent to your Pi,
-                        <br />please wait 50 secs for it to reboot.<br />
-                        <br />You will be re-directed back to the
-                        <br />dashboard automatically in 50 seconds.<br /><br /><br />
+                echo '<tr><td colspan="2" style="background: #000000; color: #00ff00;"><br /><br />El comando de reinicio ha sido enviado a su Pi,
+                        <br />espere 50 segundos para que se reinicie.<br />
+                        <br />Será redirigido de nuevo al
+                        <br />Dashboard automáticamente en 50 segundos.<br /><br /><br />
                         <script language="JavaScript" type="text/javascript">
                                 setTimeout("location.href = \'/index.php\'",50000);
                         </script>
@@ -79,11 +79,17 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
                 exec('sleep 5 && sudo shutdown -r now > /dev/null &');
                 };
         if ( escapeshellcmd($_POST["action"]) == "shutdown" ) {
-                echo '<tr><td colspan="2" style="background: #000000; color: #00ff00;"><br /><br />Shutdown command has been sent to your Pi,
-                        <br /> please wait 30 secs for it to fully shutdown<br />before removing the power.<br /><br /><br /></td></tr>';
+                echo '<tr><td colspan="2" style="background: #000000; color: #00ff00;"><br /><br />Se ha enviado el comando de apagado a su Pi,
+                        <br />  espere 30 segundos para que se apague por completo<br />antes de quitar la energía.<br /><br /><br /></td></tr>';
                 system('sudo mount -o remount,ro / > /dev/null &');
                 exec('sleep 5 && sudo shutdown -h now > /dev/null &');
                 };
+
+                
+                Será redirigido de nuevo a la
+                Tablero automáticamente en 50 segundos.
+
+
   ?>
   </table>
 <?php } else { ?>
