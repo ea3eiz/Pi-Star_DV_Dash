@@ -147,7 +147,7 @@ function formatSize( $bytes ) {
 	<div class="header">
 
 	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
-	      <h1 style="color: #ff0;">LOG - YSFGateway</h1>
+	      <h1 style="color: #ff0;">INFORMACIÓN DEL SISTEMA</h1>
 	      <p>
 		  <div class="navbar">
 		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
@@ -159,7 +159,7 @@ function formatSize( $bytes ) {
 	      </p>
 	  </div>
 		<table id="infotable" width="100%" border="0">
-		    <tr><th colspan="2">Pi-Star System Information</th></tr>
+		    <tr><th colspan="2">Informacón del sistema</th></tr>
 		    <?php
 		    // Retrieve server information
 		    $system = system_information();
