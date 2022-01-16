@@ -86,6 +86,8 @@ if ($_SERVER["PHP_SELF"] == "/admin/live_ysf_log.php") {
     });
 
     </script>
+
+    <style type="text/css">
     .logo{
     text-align: center;
 	  font-size: 12px;
