@@ -627,7 +627,7 @@ input.toggle-round-flat:focus + label {
 
 .menubackup:before {
     content: "\f187";
-    color: #ff0;
+    color: #5ff6f7;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -637,7 +637,7 @@ input.toggle-round-flat:focus + label {
 
 .menuexpert:before {
     content: "\f0a3";
-    color: #ff0;
+    color: #f00;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
