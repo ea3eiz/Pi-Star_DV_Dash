@@ -605,6 +605,7 @@ input.toggle-round-flat:focus + label {
 
 .menulogs:before {
     content: "\f06e";
+    color: #3663333;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -614,7 +615,7 @@ input.toggle-round-flat:focus + label {
 
 .menudashboard:before {
     content: "\f0e4";
-    color:#f000;
+    color: #333399;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
