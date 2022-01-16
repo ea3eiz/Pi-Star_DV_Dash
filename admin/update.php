@@ -124,7 +124,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/update.php") {
 	  </div>
   <div class="contentwide">
   <table width="100%">
-  <tr><th>Update is Running</th></tr>
+  <tr><th>Se está realizando la actualización</th></tr>
   <tr><td align="left"><div id="tail">Starting update, please wait...<br /></div></td></tr>
   </table>
   </div>
