@@ -107,7 +107,14 @@ if ($_SERVER["PHP_SELF"] == "/admin/live_modem_log.php") {
 
 	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
 	      <h1 style="color: #ff0;">LOG - INFORMES</h1>
-	      <p>
+        <div class="navbar">
+		      <a class="menuconfig" href="/admin/configure.php"><?php echo $lang['configuration'];?></a>
+		      <a class="menubackup" href="/admin/config_backup.php"><?php echo $lang['backup_restore'];?></a>
+		      <a class="menupower" href="/admin/power.php"><?php echo $lang['power'];?></a>
+		      <a class="menuadmin" href="/admin/"><?php echo $lang['admin'];?></a>
+		      <a class="menudashboard" href="/"><?php echo $lang['dashboard'];?></a>
+		  </div>
+	      </p>
 	  </div>
   <div class="contentwide">
   <table width="100%">
