@@ -110,7 +110,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/update.php") {
 <br>
 	<div class="header">
 
-	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EE</div>
+	<div style="font-size: 12px; text-align: left; padding-left: 8px; float: left; color:#ff0;">Hostname: ADER</div><div style="font-size: 12px; text-align: right; padding-right: 12px;color:#ff0;">Versión:<?php echo $configPistarRelease['Pi-Star']['Version']?> / by EA7EEE</div>
 	      <h1 style="color: #ff0;">ACTUALIZANDO</h1>
 	      <p>
 		  <div class="navbar">
